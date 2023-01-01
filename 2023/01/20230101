@@ -1,0 +1,59 @@
+## Commit Convention
+
+### Structure
+
+```
+type : subject
+
+body
+ 
+footer
+```
+
+### Type
+
+```
+feat: 새로운 기능 추가
+fix: 버그 수정
+docs: 문서 수정
+style: 코드 포맷팅 등 코드 내용 변경이 아닌 것
+refactor: 리펙토링
+test: 테스트 코드
+chore: 빌드, 패키지 매니저 등 설정 변경
+```
+
+### Subject
+
+- 50자를 넘기지 않는다.
+- 과거 시제를 사용하지 않는다.
+- 완전한 서술형 문장을 사용하지 않는다.
+    - `개조식 구문` 사용
+    - eg. 로그인 기능 구현
+- 마침표 및 특수 기호는 사용하지 않는다.
+
+### Body
+
+- 선택 사항
+- Subject의 부연 설명이 필요하면 적도록 한다.
+
+### Footer
+
+- 선택 사항
+- issue tracker id를 작성할 때 사용한다.
+
+```
+Fixes: 이슈 수정중 - 이슈가 해결되지 않은 경우
+Resolves: 이슈 해결
+Ref: 참고할 이슈
+Related to: 해당 커밋에 관련된 이슈 번호 - 이슈가 해결되지 않은 경우
+```
+
+### Commit Example
+
+```
+feat: 로그인 기능 구현
+
+Input Validation 기능 포함
+
+Related to: #24
+```
